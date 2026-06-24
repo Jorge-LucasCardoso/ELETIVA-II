@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pincel de Código — Arte, História e Técnica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Arte, História e Técnica</a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="pagina1.html">Prompts e Pixel Art</a>
+        <a href="pagina2.html">Glitch Art</a>
+        <a class="active" href="pagina3.html">Pincel de Código</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <section class="page-intro">
+        <span class="eyebrow">Página 3</span>
+        <h1>Pincel de Código</h1>
+        <p>
+          Esta página apresenta uma releitura geométrica inspirada na linguagem de Piet Mondrian. O objetivo foi transformar os princípios
+          visuais de equilíbrio, grade e cor primária em uma composição recriada exclusivamente com HTML e CSS.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Obra de referência</h2>
+        <figure class="reference-card">
+          <div class="reference-body">
+            <p>
+              A referência escolhida é <em>Composition II in Red, Blue, and Yellow</em>, obra associada à fase madura de Mondrian, marcada por
+              linhas negras espessas, grandes áreas brancas e blocos controlados de vermelho, azul e amarelo.
+            </p>
+            <p>
+              Nesta proposta, a obra original não é inserida como imagem pronta. Em vez disso, ela aparece como descrição e link de consulta,
+              preservando a exigência de trabalhar a releitura visual apenas por meio de código.
+            </p>
+            <p>
+              <a class="reference-link" href="https://www.piet-mondrian.org/composition-ii-in-red-blue-and-yellow.jsp" target="_blank" rel="noopener noreferrer">
+                Ver referência visual da obra
+              </a>
+            </p>
+          </div>
+          <figcaption>Descrição textual da obra original com link para consulta externa, sem uso de imagem embutida.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 class="section-title">Releitura em CSS</h2>
+        <figure>
+          <div class="mondrian-frame">
+            <div class="mondrian-art" aria-hidden="true">
+              <div class="block white-a"></div>
+              <div class="block white-b"></div>
+              <div class="block white-c"></div>
+              <div class="block white-d"></div>
+              <div class="block white-e"></div>
+              <div class="block white-f"></div>
+              <div class="block red"></div>
+              <div class="block blue"></div>
+              <div class="block yellow"></div>
+
+              <div class="line-v v1"></div>
+              <div class="line-v v2"></div>
+              <div class="line-v v3"></div>
+
+              <div class="line-h h1"></div>
+              <div class="line-h h2"></div>
+              <div class="line-h h3"></div>
+            </div>
+          </div>
+          <figcaption>Releitura geométrica em HTML e CSS inspirada no vocabulário visual de Mondrian.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 class="section-title">Construção em código</h2>
+        <div class="prose">
+          <p>
+            A composição foi estruturada a partir de um grande quadrado branco delimitado por uma borda preta espessa, funcionando como a
+            tela principal. Dentro desse espaço, linhas verticais e horizontais foram posicionadas com precisão para dividir o plano em
+            áreas retangulares, recriando a lógica de grade característica da obra de referência.
+          </p>
+
+          <p>
+            Depois da grade, os blocos coloridos foram inseridos como <code>div</code> absolutas com fundos vermelho, azul e amarelo, enquanto
+            os demais espaços permaneceram brancos para preservar o equilíbrio visual. O resultado final procura manter a sensação de ordem,
+            tensão e clareza geométrica, demonstrando como a pintura pode ser reinterpretada com recursos básicos de layout e posicionamento.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Portfólio digital de Jadson Carlos, Jorge Lucas, Marcus Vinicius e Carlos Gabriel — Tecnologia em Sistemas para Internet — Turma 4º Bloco.</p>
+    </div>
+  </footer>
+</body>
+</html>

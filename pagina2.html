@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glitch Art — Arte, História e Técnica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Arte, História e Técnica</a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="pagina1.html">Prompts e Pixel Art</a>
+        <a class="active" href="pagina2.html">Glitch Art</a>
+        <a href="pagina3.html">Pincel de Código</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <section class="page-intro">
+        <span class="eyebrow">Página 2</span>
+        <h1>Glitch Art</h1>
+        <p>
+          Nesta etapa do portfólio, a imagem original de um ponto turístico é reinterpretada por meio de falhas visuais simuladas em CSS.
+          O resultado busca reproduzir a sensação de arquivo corrompido, sinal instável e leitura digital fragmentada.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Original e corrompida</h2>
+        <p class="section-text">
+          A cena abaixo representa o famoso monumento do Cabeça de Cuia, localizado em Teresina. Ao lado, a mesma fotografia recebe cortes,
+          deslocamentos, sobreposições e varreduras para formar o efeito glitch.
+        </p>
+
+        <div class="gallery-two">
+          <figure>
+            <div class="art-stage" aria-hidden="true" style="background: none; overflow: hidden; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+              <img src="Cabeça_de_cuia.jpg" alt="Monumento Cabeça de Cuia" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <figcaption>Imagem original: registro fotográfico do monumento Cabeça de Cuia.</figcaption>
+          </figure>
+
+          <figure>
+            <div class="art-stage glitch-scene" aria-hidden="true" style="background: none; overflow: hidden; position: relative; border-radius: 8px;">
+              <div class="base-layer" style="width: 100%; height: 100%;">
+                <img src="Cabeça_de_cuia.jpg" alt="Monumento Cabeça de Cuia Glitch" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+
+              <div class="glitch-layer layer-one" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;">
+                <img src="Cabeça_de_cuia.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+
+              <div class="glitch-layer layer-two" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;">
+                <img src="Cabeça_de_cuia.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <figcaption>Versão corrompida com glitch art produzida por sobreposição e distorção em CSS.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Processo realizado</h2>
+        <div class="prose">
+          <p>
+            O primeiro passo foi utilizar a fotografia do monumento Cabeça de Cuia, figura folclórica emblemática da nossa região. A imagem original serviu como a base estável da composição antes de qualquer interferência do código.
+          </p>
+
+          <p>
+            Em seguida, a imagem foi duplicada em camadas sobrepostas. Cada camada recebeu transformações diferentes com <code>transform: skew()</code>,
+            deslocamentos laterais e verticais, além de áreas recortadas com <code>clip-path</code> para criar falhas segmentadas, como se trechos
+            da fotografia tivessem sido arrastados, partidos ou reposicionados em momentos diferentes da leitura digital.
+          </p>
+
+          <p>
+            Por fim, o efeito foi intensificado com <code>filter</code>, <code>mix-blend-mode</code> e animações em <code>@keyframes</code>. As linhas
+            de varredura foram aplicadas por sobreposição, reforçando a aparência de monitor, transmissão instável e distorção eletrônica,
+            enquanto o movimento contínuo mantém a imagem viva e artificialmente imperfeita.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Portfólio digital de Jadson Carlos, Jorge Lucas, Marcus Vinicius e Carlos Gabriel — Tecnologia em Sistemas para Internet — Turma quarto bloco 
+    </div>
+  </footer>
+</body>
+</html>
